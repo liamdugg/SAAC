@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SAC</class>
+ <widget class="QMainWindow" name="SAC">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1348</width>
+    <height>1036</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>SAC</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="plantilla">
+      <item row="0" column="0">
+       <widget class="SAACEditor" name="widget" native="true"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1348</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSistema">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+    <addaction name="actionGuardar_como"/>
+    <addaction name="actionCerrar"/>
+    <addaction name="actionImprimir_pantalla"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuAcciones">
+    <property name="title">
+     <string>Acciones</string>
+    </property>
+    <addaction name="actionAgregar_columna"/>
+    <addaction name="actionInsertar_columna"/>
+    <addaction name="actionAgregar_fila"/>
+    <addaction name="actionInsertar_fila"/>
+    <addaction name="actionSeleccionar_columna"/>
+    <addaction name="actionSeleccionar_fila"/>
+    <addaction name="actionConfigurar_columna"/>
+    <addaction name="actionConfigurar_fila"/>
+   </widget>
+   <addaction name="menuSistema"/>
+   <addaction name="menuAcciones"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::RightToolBarArea</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>RightToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAgregar_columna"/>
+   <addaction name="actionAgregar_fila"/>
+   <addaction name="actionSeleccionar_columna"/>
+   <addaction name="actionSeleccionar_fila"/>
+   <addaction name="actionConfigurar_columna"/>
+   <addaction name="actionConfigurar_fila"/>
+  </widget>
+  <action name="actionNuevo">
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+  </action>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+  </action>
+  <action name="actionGuardar_como">
+   <property name="text">
+    <string>Guardar como...</string>
+   </property>
+  </action>
+  <action name="actionCerrar">
+   <property name="text">
+    <string>Cerrar</string>
+   </property>
+  </action>
+  <action name="actionImprimir_pantalla">
+   <property name="text">
+    <string>Imprimir pantalla</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionAgregar_columna">
+   <property name="icon">
+    <iconset>
+     <normalon>:/imgs/agregarColumnaFinal.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Agregar columna</string>
+   </property>
+  </action>
+  <action name="actionInsertar_columna">
+   <property name="text">
+    <string>Insertar columna</string>
+   </property>
+  </action>
+  <action name="actionAgregar_fila">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/agregarFilaFinal.png</normaloff>:/imgs/agregarFilaFinal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar fila</string>
+   </property>
+  </action>
+  <action name="actionInsertar_fila">
+   <property name="text">
+    <string>Insertar fila</string>
+   </property>
+  </action>
+  <action name="actionSeleccionar_columna">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/eliminarColumna.png</normaloff>
+     <normalon>:/imgs/eliminarColumna.png</normalon>:/imgs/eliminarColumna.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar columna</string>
+   </property>
+  </action>
+  <action name="actionSeleccionar_fila">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/eliminarFila.png</normaloff>
+     <normalon>:/imgs/seleccionarFilaFinal.png</normalon>:/imgs/eliminarFila.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eliminar fila</string>
+   </property>
+  </action>
+  <action name="actionConfigurar_columna">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/ConfigurarColumna.png</normaloff>:/imgs/ConfigurarColumna.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurar columna</string>
+   </property>
+  </action>
+  <action name="actionConfigurar_fila">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/ConfigurarFila.png</normaloff>:/imgs/ConfigurarFila.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurar fila</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SAACEditor</class>
+   <extends>QWidget</extends>
+   <header>../SAACEditor.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

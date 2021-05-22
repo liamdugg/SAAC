@@ -1,0 +1,2 @@
+1;1
+Hijo de puta anda;D:/Facultad/Investigacion/miSAAC/Img/flecha.png;qrc:/Audio/audio_3;border-width: 4px;border-style: solid; border-color: #ffff00ff;;background-color:#ff000000;color: #ffaa5500;border-width: 0px;MS Shell Dlg 2; ;;; ;14

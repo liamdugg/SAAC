@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>agregarColumnaFinal.png</file>
+        <file>agregarFilaFinal.png</file>
+        <file>eliminarFila.png</file>
+        <file>eliminarColumna.png</file>
+        <file>ConfigurarColumna.png</file>
+        <file>ConfigurarFila.png</file>
+        <file>reemplazar.png</file>
+    </qresource>
+</RCC>
+
